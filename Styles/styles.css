@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+:root {
+  --color-bg: hsl(257, 40%, 49%);
+  --color-active: hsl(300, 69%, 71%);
+  --fontsize-heading: 3rem;
+  --fontsize-paragrapg: 1.5rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +16,21 @@
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228, 20%, 67%);
 }
 /* Typograph */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-seri, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: var(--color-bg);
+}
+h1 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: var(--fontsize-heading);
+}
+p {
+  font-size: var(--fontsize-paragrapg);
+}
