@@ -2,7 +2,7 @@
 :root {
   --color-bg: hsl(257, 40%, 49%);
   --color-active: hsl(300, 69%, 71%);
-  --fontsize-heading: 3rem;
+  --fontsize-heading: 3.5rem;
   --fontsize-paragrapg: 1.5rem;
 }
 
@@ -33,4 +33,20 @@ h1 {
 }
 p {
   font-size: var(--fontsize-paragrapg);
+}
+/* Button component */
+.btn {
+  padding: 2rem 6rem;
+  border: 0;
+  border-radius: 5rem;
+  font-size: var(--fontsize-paragrapg);
+  cursor: pointer;
+}
+.btn--primary {
+  color: var(--color-active);
+  transition: all 0.3s ease;
+}
+.btn--primary:hover {
+  background: var(--color-active);
+  color: #fff;
 }
